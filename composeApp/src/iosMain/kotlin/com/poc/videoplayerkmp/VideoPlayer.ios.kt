@@ -1,8 +1,9 @@
 package com.poc.videoplayerkmp
 
 import androidx.compose.runtime.Composable
+//import com.poc.videoplayerkmp.*
 
 @Composable
 actual fun OpenViewPlayer(url: String) {
-    print("Missing implementation")
+//    SwiftUIPlayerLauncher.presentPlayer(url: url)
 }

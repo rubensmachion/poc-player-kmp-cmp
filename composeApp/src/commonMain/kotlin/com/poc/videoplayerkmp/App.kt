@@ -49,17 +49,12 @@ private fun BuildTopBar() {
 
 @Composable
 private fun BuildList() {
-    val values = (0 until 10).map {
-        "Vídeo ${it + 1}"
-    }
     LazyColumn {
-        items(values) { item ->
-
+        items(Videos.list) { item ->
             BuildListItem(
                 title = item,
                 subtitle = "Subtitle"
             )
-
             HorizontalDivider()
         }
     }
