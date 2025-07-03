@@ -33,6 +33,10 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            implementation("androidx.media3:media3-exoplayer:1.7.1")
+            implementation("androidx.media3:media3-exoplayer-dash:1.7.1")
+            implementation("androidx.media3:media3-datasource-okhttp:1.7.1")
+            implementation("androidx.media3:media3-ui-compose:1.7.1")
         }
         commonMain.dependencies {
             implementation(compose.runtime)
