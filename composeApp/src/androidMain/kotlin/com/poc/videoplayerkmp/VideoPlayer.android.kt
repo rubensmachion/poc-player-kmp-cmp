@@ -28,11 +28,10 @@ import androidx.media3.ui.compose.state.rememberPresentationState
 
 @OptIn(UnstableApi::class)
 @Composable
-actual fun VideoPlayer(url: String) {
+fun VideoPlayer(url: String) {
     var player by remember { mutableStateOf<ExoPlayer?>(null) }
 
     val context = LocalContext.current
-
 
     LaunchedEffect(Unit) {
         player = ExoPlayer.Builder(context).build().apply {
@@ -88,4 +87,9 @@ fun PlayPauseButton(player: Player, modifier: Modifier = Modifier) {
             contentDescription = null
         )
     }
+}
+
+@Composable
+actual fun OpenViewPlayer(url: String) {
+    VideoPlayer(url = url)
 }

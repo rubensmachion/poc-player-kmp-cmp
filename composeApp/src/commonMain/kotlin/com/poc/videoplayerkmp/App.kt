@@ -25,7 +25,7 @@ fun App() {
             Column(
                 modifier = Modifier.padding(innerPadding)
             ) {
-                VideoPlayer("https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4")
+                OpenViewPlayer("https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4")
             }
         }
     }
